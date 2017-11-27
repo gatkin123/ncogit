@@ -1,0 +1,1165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Caengal | Predictive Modeling Visualized</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Geoff Atkin">
+	<!-- Date: 2017-07-27 -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/moment.js"></script>
+	<script language='javascript' src='js/bootstrap.min.js'/></script>
+	<script language='javascript' src='js/bootstrap-datetimepicker.min.js'/></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Slabo+27px|Roboto+Slab" rel="stylesheet">
+	<link href="css/bootstrap-slider.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<script language = 'javascript' src='js/bootstrap-slider.js'></script>	
+	<script language = 'javascript' src='scripts/vMovieClip.js'></script>
+	<script language = 'javascript' src='scripts/vMovieClip.js'></script>
+	<script language = 'javascript' src='scripts/uimanager.js'></script>
+	<script language = 'javascript' src='scripts/datamanager.js'></script>
+	<script language = 'javascript' src='scripts/programdisplay.js'></script>
+	<script language = 'javascript' src='scripts/campaigndisplay.js'></script>
+	<script language = 'javascript' src='scripts/datasetDisplay.js'></script>
+	<script language = 'javascript' src='scripts/dsetProfileChart.js'></script>
+	<script language = 'javascript' src='scripts/modelDisplay.js'></script>
+	<script language = 'javascript' src='scripts/modelChart_attrrank.js'></script>
+	<script language = 'javascript' src='scripts/modelChart_dist.js'></script>
+	<script language = 'javascript' src='scripts/modelChart_gain.js'></script>
+	<script language = 'javascript' src='scripts/modelChart_lift.js'></script>
+		<script language = 'javascript' src='scripts/modelChart_resp.js'></script>
+	<script language = 'javascript' src='scripts/charts.js'></script>
+	
+	<script language = 'javascript'>
+			var myuimanager;
+			var mydatamanager;
+			function init(){
+				myuimanager = new uimanager();
+				mydatamanager = new datamanager();
+				$('#initloadDialog').modal('show');
+				mydatamanager.init();
+				
+			}
+	</script>
+	
+</head>
+<body onload='init();'>
+
+	<div id='headercontent' class='container'>
+		<div class='row'>
+			<div id='headercontent' class='col-sm-12'>
+				<div id='backim'><img src='images/headerback.jpg'/></div>
+				<div id='head1'>
+					<div id='hband1'><img src='images/band1mod2.png'/></div>
+					<div id='hband1sol'></div>
+					<div id='htxt1' class='htx'>Deliver the Right Message</div>
+				</div>
+				<div id='head2'>
+					<div id='hband2'><img src='images/band2mod2.png'/></div>
+					<div id='hband2sol'></div>
+					<div id='htxt2' class='htx'>...to the Right Target</div>
+				</div>
+				<div id='head3'>
+					<div id='hband3'><img src='images/band3mod2.png'/></div>
+					<div id='hband3sol'></div>
+					<div id='htxt3' class='htx'>...Now!</div>
+				</div>
+			
+				<div id='logo'>
+					<div id='logographic'><img src='images/logo.png'/></div>
+				</div>
+				<div id='topmenu'>
+					<div id='topmenucontainer'>
+						<div id='tmlist'>
+							<div class='tml'><a href='javascript:;'>Log Out</a></div>
+							<div class='tml'><a href='javascript:;'>Support</a></div>
+							<div class='tml'><a href='javascript:;'>Report Issue</a></div>
+						</div>
+						<div id= 'mobbutton'><a href='javascript:;'><img src='images/hbutton'/></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id='titlecontent' class='container'>
+		<div class='row'>
+			<div id='maintitle' class='col-sm-12'><h1>Predictive Modeling Visualized</h1>Create and browse machine learning driven marketing campaigns.  If there are any issues, please report them by clicking here.”</div>
+		
+		</div>
+	</div>
+	
+	<div id='titledivider'></div>
+	
+	
+	<div id='maincontent' class='container'>
+		<div class='row'>
+			<div id='initiatives' class='col-sm-12'>
+				
+				<div id='in_lab'>Marketing Programs</div>
+				<div id="in_dd" class="dropdown ddfl">
+					 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu">
+						<li><a href='javascript:;'>Action</a></li>
+						<li><a href='javascript:;'>Another action</a></li>
+						<li><a href='javascript:;'>Something else here</a></li>
+						<li><a href='javascript:;'>Separated link</a></li>
+					</ul>
+				</div>
+				
+				<div id='in_controls' class='incontrols'>
+					<div id='in_edit'><a href='javascript:;'><span class="fa fa-pencil" style="font-size:14px"></span>Edit</a></div>
+					<div id='in_create'><a href='javascript:;'><span class="fa fa-plus" style="font-size:14px"></span>Create New</a></div>
+					<div id='in_del'><a href='javascript:;'><span class="fa fa-minus" style="font-size:14px"></span>Delete</a></div>
+					<div id='in_dup'><a href='javascript:;'><span class="fa fa-clone" style="font-size:14px"></span>Duplicate</a></div>
+
+				</div>
+			</div>
+		</div>
+		<div class='row'>
+			<div id='campaigns' class='col-sm-12'>
+	
+				<div class='row'>
+					<div id='campcontrols' class='col-sm-12'>
+						<div id='c_lab'><span class='fa fa-bullhorn' style='font-size:24px'></span>&nbsp;Campaigns</div>
+						<div id="c_dd" class="dropdown ddfl">
+					 		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+					  			<span class="caret"></span></button>
+					  			<ul class="dropdown-menu">
+									<li><a href='javascript:;'>Action</a></li>
+									<li><a href='javascript:;'>Another action</a></li>
+									<li><a href='javascript:;'>Something else here</a></li>
+									<li><a href='javascript:;'>Separated link</a></li>
+								</ul>
+						</div>
+				
+						<div id='c_controls' class='incontrols'>
+							<div id='c_edit'><a href='javascript:;'><span class="fa fa-pencil" style="font-size:14px"></span>Edit</a></div>
+							<div id='c_create'><a href='javascript:;'><span class="fa fa-plus" style="font-size:14px"></span>Create New</a></div>
+							<div id='c_del'><a href='javascript:;'><span class="fa fa-minus" style="font-size:14px"></span>Delete</a></div>
+							<div id='c_dup'><a href='javascript:;'><span class="fa fa-clone" style="font-size:14px"></span>Duplicate</a></div>
+
+						</div>
+					</div>
+				</div>
+				
+				<div class='row'>
+					<div id='ccamp_toggle' class='col-sm-12'>
+						
+						<ul class="nav nav-tabs">
+						  <li class="active"><a href='javascript:;'>PREPARATION</a></li>
+						  <li><a href='javascript:;'>ANALYSIS</a></li>
+						</ul>
+						
+					</div>
+				</div>
+				
+				<div class='row'>
+					<div id='ccamp_content' class='col-sm-12'>	
+						<div id='ccamp_toolbar'>
+							<div id='ccamp_datasets' class='ccamp_tbar_btn cctbactive'>
+								<div class='ccamptbar_lab'>DATASETS</div>
+								<div class='ccamptbar_ic'> <span class="fa fa-database" style="font-size:30px"></span></div>
+							</div>
+								
+							<div id='ccamp_models' class='ccamp_tbar_btn cctbinactive'>
+								<div class='ccamptbar_lab'>MODELS</div>
+								<div class='ccamptbar_ic'> <span class="fa fa-gears" style="font-size:30px"></span></div>
+							</div>
+								
+							<div id='ccamp_deployment' class='ccamp_tbar_btn cctbinactive'>
+								<div class='ccamptbar_lab'>DEPLOYMENT</div>
+								<div class='ccamptbar_ic'> <span class="material-icons" style="font-size:30px">call_split</span></div>
+							</div>
+						</div>
+							
+							
+						<div id='ccamp_cntarea'>
+							<!-- Content for datasets will appear here -->
+							<div id='ccamp_cnt_dsets'>
+									
+								<div id='ccamp_cnt_dsets_firstime'>
+									<div id='dsets_firstime_msg'>You currently have no datasets active. Please create a dataset</div>
+									<button id='dsets_firstime_create' class="btn btn-primary" type="button"><i class="fa fa-upload"></i>&nbsp;Create Dataset</button>
+								</div>
+									
+								<div id='ccamp_cnt_dsets_existing'>
+									<div class='row'>
+										<div class='col-sm-12'>
+											<div class='row'>
+												<div id='dscontrols' class='col-sm-12'>
+													<div id='ds_lab'>Dataset:</div>
+													<div id="ds_dd" class="dropdown ddfl">
+														<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example<span class="caret"></span></button>
+													  	<ul class="dropdown-menu">
+															<li><a href='javascript:;'>Action</a></li>
+															<li><a href='javascript:;'>Another action</a></li>
+															<li><a href='javascript:;'>Something else here</a></li>
+															<li><a href='javascript:;'>Separated link</a></li>
+														</ul>
+													</div>
+													<div id='d_controls' class='incontrols'>
+														<div id='d_edit'><a href='javascript:;'><span class="fa fa-pencil" style="font-size:14px"></span>Edit</a></div>
+														<div id='d_create'><a href='javascript:;'><span class="fa fa-plus" style="font-size:14px"></span>Create New</a></div>
+														<div id='d_del'><a href='javascript:;'><span class="fa fa-minus" style="font-size:14px"></span>Delete</a></div>
+														<div id='d_dup'><a href='javascript:;'><span class="fa fa-clone" style="font-size:14px"></span>Duplicate</a></div>
+													</div>
+												</div>
+											</div>
+											<div class='row'>
+												<div id='ds_toggle' class='col-sm-12'>
+													<ul class="nav nav-tabs">
+													  <li class="active"><a href="javascript:;">SCHEMA</a></li>
+													  <li><a href="javascript:;">PROFILE</a></li>
+													</ul>
+												</div>
+											</div>		
+											<div class='row'>
+												<div id='ds_content' class='col-sm-12'>		
+													<div id='ds_schema'>
+														
+														<div id='ds_schema_toggle'>
+															<div id='ds_scht_preview' class='dsschemtogglab'>Preview</div>
+															
+															<div id='ds_scht_attributes' class='dsschemtogglab'><a href='javascript:;'>Attributes</a></div>
+														</div>			
+														<div id='ds_schema_content'>
+															<div id='ds_schema_prev'>
+																<div id='tsttable'>
+																	<table id='ds_hdtab'></table>
+																</div>
+																<div id='tsttable_mn'>
+																	<table id='ds_maintab'></table>
+																</div>
+																	
+
+																<div id='updateschema'>
+																		<div id='upschema_msg'>schema changes:<span class='fa fa-caret-right'></span></div>
+																		<button id='upschema_rev' class="btn btn-primary btn-sm" type="button" data-dismiss="modal">Revert</button>
+																		<button id='upschema_sv' class="btn btn-primary btn-sm" type="button" data-dismiss="modal">Save</button>
+																</div>
+																<div id='flagmenu' class='sh2'>
+																	<ul>
+																		<li><span class='fa fa-key'></span>&nbsp;Primary Key</li>
+																		<li><span class='fa fa-credit-card'></span>&nbsp;Message</li>
+																		<li><span class='fa fa-line-chart'></span>&nbsp;Response</li>
+																		<li><span class='fa fa-gears'></span>&nbsp;Model Only</li>
+																		<li><span class='fa fa-bar-chart'></span>&nbsp;Stats Only</li>
+																		<li><span class='fa fa-window-close'></span>&nbsp;Ignore</li>
+																		<li><span class='fa fa-balance-scale'></span>&nbsp;Weight</li>
+																		<li><span class='fa fa-square'></span>&nbsp;Clear</li>
+																		
+																	</ul>
+																</div>
+																<div id='typemenu' class='sh2'>
+																	<ul>
+																		<li>integer</li>
+																		<li>string</li>
+																		<li>boolean</li>
+																		<li>float</li>
+																	</ul>
+																</div>
+
+																<div id='tablescroll'><span class='fa fa-caret-right'></span></div>
+																<div id='tablescrollback'><span class='fa fa-caret-left'></span></div>
+															</div>	
+															<div id='ds_schema_attr'>
+																<div id='tsttableattr'>
+																	<table>
+																	</table>
+																</div>
+																
+																	<div id='updateschemaattr'>
+																			<div id='upschema_attr_msg'>schema changes:<span class='fa fa-caret-right'></span></div>
+																			<button id='upschema_attr_rev' class="btn btn-primary btn-sm" type="button" data-dismiss="modal">Revert</button>
+																			<button id='upschema_attr_sv' class="btn btn-primary btn-sm" type="button" data-dismiss="modal">Save</button>
+																	</div>
+																	
+																	
+																
+																<div id='flagmenuattr' class='sh2'>
+																	<ul>
+																		<li><span class='fa fa-key'></span>&nbsp;Primary Key</li>
+																		<li><span class='fa fa-credit-card'></span>&nbsp;Message</li>
+																		<li><span class='fa fa-line-chart'></span>&nbsp;Response</li>
+																		<li><span class='fa fa-gears'></span>&nbsp;Model Only</li>
+																		<li><span class='fa fa-bar-chart'></span>&nbsp;Stats Only</li>
+																		<li><span class='fa fa-window-close'></span>&nbsp;Ignore</li>
+																		<li><span class='fa fa-balance-scale'></span>&nbsp;Weight</li>
+																		<li><span class='fa fa-square'></span>&nbsp;Clear</li>
+																	</ul>
+																</div>
+
+																<div id='typemenuattr' class='sh2'>
+																	<ul>
+																		<li>integer</li>
+																		<li>string</li>
+																		<li>boolean</li>
+																		<li>float</li>
+																	</ul>
+																</div>
+																
+															</div>			
+														</div>
+													</div>																												
+													<div id='ds_profile'>
+														<div id='ds_prof_menu'>
+															<div id='dsprmen_mainattr'>
+																<div class = 'dsprmen_mattr'><span class='fa fa-credit-card'></span>&nbsp;Offer</div>
+																<div class = 'dsprmen_mattr'><span class='fa fa-line-chart'></span>&nbsp;Prediction</div>
+															</div>
+															<div id='dsprmen_othattr'>				
+														
+																<div id='dsprmen_othattr_panel'>
+																	<div class = 'dsprmen_oattr'>Age</div>
+																	<div class = 'dsprmen_oattr'>Income</div>
+																	<div class = 'dsprmen_oattr'>Education Level</div>
+																	<div class = 'dsprmen_oattr'>Total Debt Outstanding</div>
+																	<div class = 'dsprmen_oattr'>Buys Female Merchandise</div>
+																	<div class = 'dsprmen_oattr'>Buys Male Merchandise</div>
+																	<div class = 'dsprmen_oattr'>Buys Upscale Merchandise</div>
+																</div>
+															</div>
+														</div>		
+														<div id='ds_prof_content'>
+															<div id='ds_prof_choose'>
+																
+																<div id='ds_prof_title'>Deciles</div>
+																<div id='ds_prof_choices'></div>
+																
+															</div>	
+															<div id='ds_prof_charts'>
+															</div>
+															<div id='ds_prof_ranges'>
+															</div>
+															<div id='ds_prof_charts_nav'>
+															</div>			
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>	
+								
+								
+							<div id='ccamp_cnt_models'>
+									
+								<div id='ccamp_cnt_models_firstime'>
+									<h3>You currently have no models active. Please create a model</h3>
+									<button class="btn btn-primary" type="button"><i class="fa fa-upload"></i>&nbsp;Create Model<span class="caret"></span></button>
+								</div>
+								<div id='ccamp_cnt_models_existing'>
+									<div class='row'>
+										<div class='col-sm-12'>				
+											<div class='row'>
+												<div id='modcontrols' class='col-sm-12'>
+													<div id='mod_lab'>Model</div>
+													<div id="mod_dd" class="dropdown ddfl">
+													 	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Model 1
+												 			<span class="caret"></span></button>
+												  			<ul class="dropdown-menu">
+																<li><a href='javascript:;'>Action</a></li>
+																<li><a href='javascript:;'>Another action</a></li>
+																<li><a href='javascript:;'>Something else here</a></li>
+																<li><a href='javascript:;'>Separated link</a></li>
+															</ul>
+													</div>
+													<div id='m_controls' class='incontrols'>
+														<div id='m_create'><a href='javascript:;'><span class="fa fa-plus" style="font-size:14px"></span>Create New</a></div>
+														<div id='m_del'><a href='javascript:;'><span class="fa fa-minus" style="font-size:14px"></span>Delete</a></div>
+														<div id='m_dup'><a href='javascript:;'><span class="fa fa-clone" style="font-size:14px"></span>Duplicate</a></div>
+													</div>
+												</div>
+											</div>	
+											<div class='row'>
+												<div id='scorecontrols' class='col-sm-12'>
+													<div id='sf_lab'>Scored Files </div>
+													
+													<div id="sf_dd" class="dropdown ddfl">
+												 		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Score File 1<span class="caret"></span></button>
+												  			<ul class="dropdown-menu">
+																<li><a href='javascript:;'>Action</a></li>
+																<li><a href='javascript:;'>Another action</a></li>
+																<li><a href='javascript:;'>Something else here</a></li>
+																<li><a href='javascript:;'>Separated link</a></li>
+															</ul>
+													</div>
+													<div id='s_controls' class='incontrols'>
+														<div id='s_create'><a href='javascript:;'><span class="fa fa-plus" style="font-size:14px"></span>Create New</a></div>
+														<div id='s_dup'><a href='javascript:;'><span class="fa fa-minus" style="font-size:14px"></span>Delete</a></div>
+														<div id='s_dup'><a href='javascript:;'><span class="fa fa-clone" style="font-size:14px"></span>Duplicate</a></div>
+													</div>
+												</div>
+											</div>	
+											<div class='row'>
+												<div id='mod_toggle' class='col-sm-12'>
+													<ul class="nav nav-tabs">
+														 <li class="active"><a href='javascript:;'>SEGMENTS</a></li>
+														 <li><a href='javascript:;'>ATTRIBUTE IMPORTANCE</a></li>
+														<li><a href='javascript:;'>CHARTS</a></li>
+													</ul>
+												</div>
+											</div>	
+											<div class='row'>
+												<div id='mod_content' class='col-sm-12'>
+													<div id='mod_segments'>
+														<div id='mod_seglist'></div>		
+														
+														
+														
+														<div id='mod_segdisplay'>
+															
+															
+															<div id='mod_profile'>
+																<div id='mod_prof_mainlab'>Segment 1 Profile</div>
+																<div id='mod_prof_menu'>
+																	
+																	<div id='modprmen_othattr'>				
+
+																		<div id='modprmen_othattr_panel'>
+																			<div class = 'modprmen_oattr'>Age</div>
+																			<div class = 'modprmen_oattr'>Income</div>
+																			<div class = 'modprmen_oattr'>Education Level</div>
+																			<div class = 'modprmen_oattr'>Total Debt Outstanding</div>
+																			<div class = 'modprmen_oattr'>Buys Female Merchandise</div>
+																			<div class = 'modprmen_oattr'>Buys Male Merchandise</div>
+																			<div class = 'modprmen_oattr'>Buys Upscale Merchandise</div>
+																		</div>
+																	</div>
+																</div>		
+																<div id='mod_prof_content'>
+																	<div id='mod_prof_choose'>
+
+																		<div id='mod_prof_title'>Min, Mean and Max</div>
+																		<div id='mod_prof_choices'></div>
+
+																	</div>	
+																	<div id='mod_prof_charts'>
+																	</div>
+																	<div id='mod_prof_ranges'>
+																	</div>
+																	<div id='mod_prof_charts_nav'>
+																	</div>			
+																</div>
+															</div>
+															
+	
+															
+															
+														</div>
+													</div>		
+													<div id='mod_attributes'>
+														<div id='mod_segattrcharts'></div>
+													</div>	
+													<div id='mod_charts'>
+														<div class='row'>
+															<div id='mod_ch_choose' class='col-sm-12'>	
+																
+																
+																<div id='mod_chart_toggle'>
+																	<div id='mod_chart_preview' class='mchtogglab'>Gain and Lift</div>
+
+																	<div id='mod_chart_attributes' class='mchtogglab'><a href='javascript:;'>Distribution by Segment</a></div>
+																</div>
+																
+																
+															</div>
+														</div>
+																
+														<div class='row'>
+															<div id='mod_charts_content' class='col-sm-12'>
+																<div id='mod_charts_gl'>
+																	<div id='mod_charts_gain_title'>Gain Chart</div>
+																	<div id='mod_charts_gain_ytitle' class='rotate'>CUMULATIVE OUTCOME %</div>
+																	<div id='mod_charts_gain_xtitle'>SEGMENTS</div>
+																	<div id='mod_charts_gain_xtitle1'>Highest Score</div>
+																	<div id='mod_charts_gain_xtitle2'>Lowest Score</div>
+																	<div id='mod_charts_gain'></div>
+																	
+																	
+																	
+																	<div id='mod_charts_lift_title'>Lift Chart</div>
+																	<div id='mod_charts_lift_ytitle' class='rotate'>RESPONSE %</div>
+																	<div id='mod_charts_lift_xtitle'>SEGMENTS</div>
+																	<div id='mod_charts_lift_xtitle1'>Highest Score</div>
+																	<div id='mod_charts_lift_xtitle2'>Lowest Score</div>
+																	<div id='mod_charts_lift'></div>
+																	
+																	
+																	<div id='mod_charts_resp_title'>Response Chart</div>
+																	<div id='mod_charts_resp_ytitle' class='rotate'>RESPONSE RATE %</div>
+																	<div id='mod_charts_resp_xtitle'>SEGMENTS</div>
+																	<div id='mod_charts_resp_xtitle1'>Highest Score</div>
+																	<div id='mod_charts_resp_xtitle2'>Lowest Score</div>
+																	<div id='mod_charts_resp'></div>
+																	
+																	
+																	
+																</div>
+																<div id='mod_charts_dist'></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+							
+							<div id='ccamp_cnt_depl'></div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+
+
+
+
+
+
+	<div id="modelDialog" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div id='increatediag_lab'>Model Details</div>
+				</div>
+				<div class="modal-body">
+					<div id='modcreatediag_frm'>
+						<div class='editdiagline'>
+							<div class='editdiagline_lab'>Name</div>
+							<div class='editdiagline_val'><input type='text' name='initname'></div>
+						</div>
+						<div class='editdiagline'>		
+							<div class='editdiagline_lab'>Description</div>
+							<div class='editdiagline_val'><input type='text' name='initdescr'></div>
+						</div>
+						<div class='editdiagline'>
+							<div class='editdiagline_lab'>Dataset</div>	
+							<div id="ctype_dd" class="dropdown">
+				 				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Model Training Data.csv</button>
+				  				<ul class="dropdown-menu">
+									<li><a href='javascript:;'>Action</a></li>
+									<li><a href='javascript:;'>Another action</a></li>
+									<li><a href='javascript:;'>Something else here</a></li>
+									<li><a href='javascript:;'>Separated link</a></li>
+								</ul>
+							</div>
+						</div>
+					
+					
+						<div class='diagsubtitle'>SPECIAL ATTRIBUTES</div>
+					
+						<div class='editdiagline'>
+							<div class='editdiagline_lab'>Outcome</div>	
+							<div class='editdiagline_valtext'></div>
+						</div>
+						
+						<div class='editdiagline'>
+							<div class='editdiagline_lab'>Treatment</div>	
+							<div class='editdiagline_valtext'></div>
+						</div>
+						
+						<div class='editdiagline'>
+							<div class='editdiagline_lab'>Treatment Emphasis</div>	
+							<div id="ctype_dd" class="dropdown">
+							 	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">0.5 (Balanced)</button>
+							 		<ul class="dropdown-menu">
+											<li><a href='javascript:;'>0.0</a></li>
+											<li><a href='javascript:;'>0.1</a></li>
+											<li><a href='javascript:;'>0.2</a></li>
+											<li><a href='javascript:;'>0.3</a></li>
+											<li><a href='javascript:;'>0.4</a></li>
+											<li><a href='javascript:;'>0.5 (Balanced)</a></li>
+											<li><a href='javascript:;'>0.6</a></li>
+											<li><a href='javascript:;'>0.7</a></li>
+											<li><a href='javascript:;'>0.8</a></li>
+											<li><a href='javascript:;'>0.9</a></li>
+											<li><a href='javascript:;'>1.0</a></li>
+									</ul>
+							</div>
+						</div>
+						
+						
+						<div class='editdiagline'>
+							<div class='editdiagline_lab'>Row Weight</div>	
+							<div class='editdiagline_valtext'></div>
+						</div>
+						
+						
+						<div class='diagsubtitle'>MISC SETTINGS</div>
+							<div class='editdiagline'>
+								<div class='editdiagline_lab'>Missing Penalty</div>	
+								<div id="ctype_dd" class="dropdown">
+							 		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Global</button>
+							  		<ul class="dropdown-menu">
+										<li><a href='javascript:;'>Local</a></li>
+										<li><a href='javascript:;'>Equal</a></li>
+										<li><a href='javascript:;'>Global</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class='editdiagline'>
+							<div class='editdiagline_lab'>Class Weight</div>	
+							<div id="ctype_dd" class="dropdown">
+							 	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">1.0</button>
+							 		<ul class="dropdown-menu">
+										<li><a href='javascript:;'>0.0</a></li>
+										<li><a href='javascript:;'>0.1</a></li>
+										<li><a href='javascript:;'>0.2</a></li>
+										<li><a href='javascript:;'>0.3</a></li>
+										<li><a href='javascript:;'>0.4</a></li>
+										<li><a href='javascript:;'>0.5</a></li>
+										<li><a href='javascript:;'>0.6</a></li>
+										<li><a href='javascript:;'>0.7</a></li>
+										<li><a href='javascript:;'>0.8</a></li>
+										<li><a href='javascript:;'>0.9</a></li>
+										<li><a href='javascript:;'>1.0</a></li>
+										
+									</ul>
+							</div>
+							</div>
+					
+					
+								
+							
+							
+							<div class='diagsubtitle'>TREE CONTROL</div>
+
+								<div class='editdiagline'>
+									<div class='editdiagline_lab'>Split Metric</div>	
+									<div id="ctype_dd" class="dropdown">
+									 	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Gini Index</button>
+									  	<ul class="dropdown-menu">
+											<li><a href='javascript:;'>Entropy</a></li>
+											<li><a href='javascript:;'>Gini Index</a></li>
+											<li><a href='javascript:;'>Gini-Hat Index</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class='editdiagline'>
+									<div class='editdiagline_lab'>Stop Grow (%)</div>	
+									<div id="ctype_dd" class="dropdown">
+										 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">2.0%</button>
+										 <ul class="dropdown-menu">
+											<li><a href='javascript:;'>0.5%</a></li>
+											<li><a href='javascript:;'>1.0%</a></li>
+											<li><a href='javascript:;'>1.5%</a></li>
+											<li><a href='javascript:;'>2.0%</a></li>
+											<li><a href='javascript:;'>2.5%</a></li>
+											<li><a href='javascript:;'>3.0%</a></li>
+											<li><a href='javascript:;'>3.5%</a></li>
+											<li><a href='javascript:;'>4.0%</a></li>
+											<li><a href='javascript:;'>4.5%</a></li>
+											<li><a href='javascript:;'>5.0%</a></li>
+											<li><a href='javascript:;'>5.5%</a></li>
+											<li><a href='javascript:;'>6.0%</a></li>
+											<li><a href='javascript:;'>6.5%</a></li>
+											<li><a href='javascript:;'>7.0%</a></li>
+											<li><a href='javascript:;'>7.5%</a></li>
+											<li><a href='javascript:;'>8.0%</a></li>
+											<li><a href='javascript:;'>8.5%</a></li>
+											<li><a href='javascript:;'>9.0%</a></li>
+											<li><a href='javascript:;'>10.0%</a></li>
+											
+											
+										</ul>
+									</div>
+								</div>
+
+
+								<div class='editdiagline'>
+									<div class='editdiagline_lab'>Minimum Size (%)</div>	
+									<div id="ctype_dd" class="dropdown">
+										 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">0.5%</button>
+										 <ul class="dropdown-menu">
+											<li><a href='javascript:;'>0.25%</a></li>
+											<li><a href='javascript:;'>0.50%</a></li>
+											<li><a href='javascript:;'>0.75%</a></li>
+											<li><a href='javascript:;'>1.%</a></li>
+										</ul>
+									</div>
+								</div>		
+								
+									<div class='diagsubtitle'>SAMPLING OPTIONS</div>
+
+									<div class='editdiagline'>
+										<div class='editdiagline_lab'>Sampling</div>	
+										<div id="ctype_dd" class="dropdown">
+											<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">100% (No Sampling)</button>
+											<ul class="dropdown-menu">
+												<li><a href='javascript:;'>5%</a></li>
+												<li><a href='javascript:;'>10%</a></li>
+												<li><a href='javascript:;'>15%</a></li>
+												<li><a href='javascript:;'>20%</a></li>
+												<li><a href='javascript:;'>25%</a></li>
+												<li><a href='javascript:;'>30%</a></li>
+												<li><a href='javascript:;'>35%</a></li>
+												<li><a href='javascript:;'>40%</a></li>
+												<li><a href='javascript:;'>45%</a></li>
+												<li><a href='javascript:;'>50%</a></li>
+												<li><a href='javascript:;'>100% (No Sampling)</a></li>
+											</ul>
+										</div>
+									</div>
+
+									<div class='editdiagline'>
+										<div class='editdiagline_lab'>Sampling Phase</div>	
+										<div id="ctype_dd" class="dropdown">
+									 	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">0</button>
+									 		<ul class="dropdown-menu">
+												<li><a href='javascript:;'>0</a></li>
+											</ul>
+										</div>
+									</div>
+
+
+									<div class='editdiagline'>
+										<div class='editdiagline_lab'>Sampling Compliment</div>	
+										<div id="ctype_dd" class="dropdown">
+											<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">False (Use Base)</button>
+											<ul class="dropdown-menu">
+												<li><a href='javascript:;'>True</a></li>
+												<li><a href='javascript:;'>False (Use Base)</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<div class='editdiagfooterbtns'>
+									<button class="btn btn-primary" type="button" data-dismiss="modal">Save and Create Model</button>
+									<button class="btn btn-primary" type="button" data-dismiss="modal">Cancel</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+			</div>
+		</div>
+	</div>
+					
+								
+								
+
+
+
+
+	<div id="campaignDialog" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div id='increatediag_lab'>Campaign Details</div>
+				</div>
+				<div class="modal-body">
+					<div id='increatediag_frm'>
+						<div class='editdiagline'>
+							<div id='initdiagcampname' class='editdiagline_lab dreq'><span class='dreqast'>*</span>Name</div>
+							<div class='editdiagline_val'><input type='text' name='initname'></div>
+						</div>
+						<div class='editdiagline'>		
+							<div id='initdiagcampdescr' class='editdiagline_lab'>Description</div>
+							<div class='editdiagline_val'><input type='text' name='initdescr'></div>
+						</div>
+
+
+
+							
+								<div class='editdiagline'>
+									<div class='editdiagline_lab'>Campaign State</div>	
+									<div id="ctype_dd" class="dropdown">
+								 		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Not Set<span class="caret"></span></button>
+							  			<ul class="dropdown-menu">
+											<li><a href='javascript:;'>Draft</a></li>
+											<li><a href='javascript:;'>Ready</a></li>
+											<li><a href='javascript:;'>Inmarket</a></li>
+											<li><a href='javascript:;'>Completed</a></li>
+											<li><a href='javascript:;'>Cancelled</a></li>
+										</ul>
+									</div>
+								</div>
+									
+							
+						<div class='editdiagline'>
+							<div class='editdiagline_lab'>Campaign Type</div>	
+							<div id="ctype_dd" class="dropdown">
+						 		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Not Set<span class="caret"></span></button>
+					  			<ul class="dropdown-menu">
+									<li><a href='javascript:;'>Not Set</a></li>
+									<li><a href='javascript:;'>Acquisition</a></li>
+									<li><a href='javascript:;'>Retention</a></li>
+									<li><a href='javascript:;'>Other</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class='editdiagline'>
+							<div class='editdiagline_lab'>Campaign Method</div>	
+							<div id="ctype_dd" class="dropdown">
+					 			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Not Set<span class="caret"></span></button>
+					  			<ul class="dropdown-menu">
+									<li><a href='javascript:;'>Not Set</a></li>
+									<li><a href='javascript:;'>Inbound</a></li>
+									<li><a href='javascript:;'>Outbound</a></li>
+									<li><a href='javascript:;'>Other</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class='editdiagline'>
+							<div class='editdiagline_lab'>Contact Channel</div>	
+							<div id="ctype_dd" class="dropdown">
+					 			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Not Set<span class="caret"></span></button>
+					  			<ul class="dropdown-menu">
+									<li><a href='javascript:;'>Not Set</a></li>
+									<li><a href='javascript:;'>Email</a></li>
+									<li><a href='javascript:;'>Webpage</a></li>
+									<li><a href='javascript:;'>Telephone</a></li>
+									<li><a href='javascript:;'>Mail</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class='editdiagline'>		
+							<div class='editdiagline_lab'>Fixed Cost</div>
+							<div class='editdiagline_val'><input type='text' name='initdescr'></div>
+						</div>
+
+						<div class='editdiagline'>		
+							<div class='editdiagline_lab'>Variable Cost</div>
+							<div class='editdiagline_val'><input type='text' name='initdescr'></div>
+						</div>
+
+						<div class='editdiagline'>		
+							<div class='editdiagline_lab'>Variable Cost Unit</div>
+							<div class='editdiagline_val'><input type='text' name='initdescr'></div>
+						</div>
+
+
+						<div class='editdiagline'>			
+							<div class='editdiagline_lab'>Deployment Start Date</div>
+						 	<div class="editdiagline_val">
+				                <div class='input-group date' id='datetimepicker1'>
+				                    <input type='text' class="form-control" />
+				                    <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+				                </div>
+								<script type="text/javascript">
+								            $(function () {
+								                $('#datetimepicker_depstart').datetimepicker();
+								            });
+							     </script>
+			            	</div>
+						</div>
+						<div class='editdiagline'>			
+							<div class='editdiagline_lab'>Deployment End Date</div>
+						 	<div class="editdiagline_val">
+				                <div class='input-group date' id='datetimepicker2'>
+				                    <input type='text' class="form-control" />
+				                    <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+				                </div>
+								<script type="text/javascript">
+								            $(function () {
+								                $('#datetimepicker_depend').datetimepicker();
+								            });
+							     </script>
+			            	</div>
+						</div>
+					</div>
+					<div class='reqmsg'>* denotes required</div>
+				</div>
+				<div class="modal-footer">
+					<div class='editdiagfooterbtns'>
+						<button class="btn btn-primary" type="button" data-dismiss="modal">Save</button>
+						<button class="btn btn-primary" type="button" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+			
+
+		</div>
+	</div>
+
+
+	<div id="initiativeDialog" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div id='increatediag_lab'>Marketing Program Details</div>
+				</div>
+				<div class="modal-body">
+					
+					<div id='increatediag_frm'>
+						<div class='editdiagline'>
+							<div id='initdiagprogname' class='editdiagline_lab dreq'><span class='dreqast'>*</span>Name</div>
+							<div id='initdiagprognameinput' class='editdiagline_val'><input placeholder='Enter Name' type='text' name='initname' value='Test Program'></div>
+						</div>
+						<div class='editdiagline'>		
+							<div id='initdiagprogdescr' class='editdiagline_lab'>Description</div>
+							<div class='editdiagline_val'><input placeholder='Enter Description' type='text' name='initdescr'></div>
+						</div>
+						
+					
+					
+					
+					</div>
+					<div class='reqmsg'>* denotes required</div>
+				</div>
+				<div class="modal-footer">
+					<div class='editdiagfooterbtns'>
+						<button class="btn btn-primary" type="button" data-dismiss="modal">Save</button>
+						<button class="btn btn-primary" type="button" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id="initloadDialog" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content" style='text-align:center;'>
+				<div class="modal-header">
+					<h3>Loading Datasets</h3>
+				</div>
+				<div class="modal-body">
+					<i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></i>
+				</div>
+			
+			
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="confirmDialog" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div id='increatediag_lab'>Delete Program</div>
+				</div>
+				<div class="modal-body">
+					<div class='editdiagmsg'>Are you sure you want to delete this programs?</div>
+				</div>
+				<div class="modal-footer">
+					<div class='editdiagfooterbtns'>
+						<button class="btn btn-primary" type="button" data-dismiss="modal">Confirm</button>
+						<button class="btn btn-primary" type="button" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div id="scorefileDialog" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div id='increatediag_lab'>Score File Details</div>
+				</div>
+				<div class="modal-body">
+					<div id='increatediag_frm'>
+						<div class='editdiagline'>
+							<div class='editdiagline_lab'><span class='dreqast'>*</span>Name</div>
+							<div class='editdiagline_val'><input type='text' name='initname'></div>
+						</div>
+						<div>		
+							<div class='editdiagline_lab'>Description</div>
+							<div class='editdiagline_val'><input type='text' name='initdescr'></div>
+						</div>
+						
+						<div class='editdiagline'>
+							<div class='editdiagline_lab'><span class='dreqast'>*</span>Dataset</div>	
+							<div id="ctype_dd" class="dropdown">
+				 				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Model Training Data.csv</button>
+				  				<ul class="dropdown-menu">
+									<li><a href='javascript:;'>Action</a></li>
+									<li><a href='javascript:;'>Another action</a></li>
+									<li><a href='javascript:;'>Something else here</a></li>
+									<li><a href='javascript:;'>Separated link</a></li>
+								</ul>
+							</div>
+						</div>
+						
+							<div>		
+								<div class='editdiagline_lab'>Generate Score Records?</div>
+								<div class='editdiagline_val'><input type='checkbox' name='initdescr'></div>
+							</div>
+							
+							
+								<div class='editdiagline'>
+									<div class='editdiagline_lab'><span class='dreqast'>*</span>Prune Level</div>	
+									<div id="ctype_dd" class="dropdown">
+						 				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Model Training Data.csv</button>
+						  				<ul class="dropdown-menu">
+											<li><a href='javascript:;'>0.0</a></li>
+											<li><a href='javascript:;'>0.1</a></li>
+											<li><a href='javascript:;'>0.2</a></li>
+											<li><a href='javascript:;'>0.4</a></li>
+											<li><a href='javascript:;'>0.5</a></li>
+											<li><a href='javascript:;'>0.6</a></li>
+											<li><a href='javascript:;'>0.7</a></li>
+											<li><a href='javascript:;'>0.8</a></li>
+											<li><a href='javascript:;'>0.9</a></li>
+											<li><a href='javascript:;'>1.0</a></li>
+											
+										</ul>
+									</div>
+								</div>
+								
+									<div class='editdiagline'>
+										<div class='editdiagline_lab'>Sampling Percentage</div>	
+										<div id="ctype_dd" class="dropdown">
+											<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">100% (No Sampling)</button>
+											<ul class="dropdown-menu">
+												<li><a href='javascript:;'>5%</a></li>
+												<li><a href='javascript:;'>10%</a></li>
+												<li><a href='javascript:;'>15%</a></li>
+												<li><a href='javascript:;'>20%</a></li>
+												<li><a href='javascript:;'>25%</a></li>
+												<li><a href='javascript:;'>30%</a></li>
+												<li><a href='javascript:;'>35%</a></li>
+												<li><a href='javascript:;'>40%</a></li>
+												<li><a href='javascript:;'>45%</a></li>
+												<li><a href='javascript:;'>50%</a></li>
+												<li><a href='javascript:;'>100% (No Sampling)</a></li>
+											</ul>
+										</div>
+									</div>
+									
+										<div class='editdiagline'>
+											<div class='editdiagline_lab'>Sampling Phase</div>	
+											<div id="ctype_dd" class="dropdown">
+										 	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">0</button>
+										 		<ul class="dropdown-menu">
+													<li><a href='javascript:;'>0</a></li>
+												</ul>
+											</div>
+										</div>
+
+
+										<div class='editdiagline'>
+											<div class='editdiagline_lab'>Sampling Compliment</div>	
+											<div id="ctype_dd" class="dropdown">
+												<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">False (Use Base)</button>
+												<ul class="dropdown-menu">
+													<li><a href='javascript:;'>True</a></li>
+													<li><a href='javascript:;'>False (Use Base)</a></li>
+												</ul>
+											</div>
+										</div>
+										
+									
+								
+						
+						
+					</div>
+				</div>
+				<div class="modal-footer">
+				<div class='editdiagfooterbtns'>
+					<button class="btn btn-default" type="button" data-dismiss="modal">Save</button>
+					<button class="btn btn-default" type="button" data-dismiss="modal">Cancel</button>
+					</div>
+				
+				</div>
+			
+			</div>
+		</div>
+	</div>
+
+
+	<div id="datasetDialog" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div id='increatediag_lab'>Dataset Details</div>
+				</div>
+				<div class="modal-body">
+					<div id='increatediag_frm'>
+						<div class='editdiagline'>
+							<div class='editdiagline_lab dreq'><span class='dreqast'>*</span>Name</div>
+							<div class='editdiagline_val'><input type='text' name='initname' value='New Dataset'></div>
+						</div>
+						<div class='editdiagline'>		
+							<div class='editdiagline_lab'>Description</div>
+							<div class='editdiagline_val'><input type='text' name='initdescr' value='Dataset Description'></div>
+						</div>
+						<div id='datafilemgmt'>		
+							
+							
+							
+							<div id='datasetuploadform'>
+							<div id='dsintruc'>Select a schema and data file to upload. </br>
+								<span class='dsinstruc_sub'>Make sure the schema file name is in the form [filename].dd and the data file name is in the form [filename].csv</span></div> 
+							<form id="file-form" action="testfileload" method="POST" enctype="multipart/form-data">
+								 <input type="hidden" id="file-form-prog" name="progid" value=""/>
+								<input type="hidden" id="file-form-dsname" name="dsname" value="Default Name"/>
+								<input type="hidden" id="file-form-created" name="created" value="97676"/>
+								<input type="hidden" id="file-form-descr" name="description" value="97676"/>
+								<input type="text" id="file-form-fileph" name="fph" value="Choose Files">
+						 		<input type="file" id="file-form-inpt" name='datasets[]' multiple/>
+
+
+										
+										
+							</form>
+							</div>
+							<div id='dsloadstatus'>&nbsp;</div>
+
+							<div id='filelisting'>
+
+								<div class='filerow' id='ds_file_schema'>
+									<div class='statusmarker'></div>
+									<div class='filelabel nofile'>Schema:</div>
+									<div class='filenm'></div>
+								</div>
+								<div class='filerow' id='ds_file_data'>
+									<div class='statusmarker'></div>
+									<div class='filelabel nofile'>Data:</div>
+									<div class='filenm'></div>
+								</div>
+
+
+
+							</div>
+
+							
+							
+							
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+				<div class='editdiagfooterbtns'>
+					<button id='updsfiles' class="btn btn-primary" type="button" data-dismiss="modal" disabled='true'>Upload Dataset</button>
+					<button class="btn btn-primary" type="button" data-dismiss="modal">Cancel</button>
+					</div>
+				
+				</div>
+			
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
